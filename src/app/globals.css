@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 99%;
+    --foreground: 0 0% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
+    --primary: 350 78% 42%; /* #b91c1c - Đỏ đậm học thuật chuẩn Harvard/Oxford */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 10% 96%;
+    --secondary-foreground: 0 0% 12%;
+    --muted: 0 10% 96%;
+    --muted-foreground: 0 5% 46%;
+    --accent: 0 15% 95%;
+    --accent-foreground: 0 0% 12%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 10% 91%;
+    --input: 0 10% 91%;
+    --ring: 350 78% 42%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 0 20% 5%;
+    --foreground: 0 10% 92%;
+    --card: 0 15% 8%;
+    --card-foreground: 0 10% 92%;
+    --popover: 0 15% 8%;
+    --popover-foreground: 0 10% 92%;
+    --primary: 350 82% 58%; /* Đỏ đậm rực rỡ sắc nét trên nền tối */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 10% 14%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 10% 14%;
+    --muted-foreground: 0 5% 65%;
+    --accent: 0 15% 16%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 10% 17%;
+    --input: 0 10% 17%;
+    --ring: 350 82% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased min-h-screen selection:bg-red-500/20 selection:text-red-500;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
+
+/* iOS iPhone X & Mobile Safe Area Enhancements */
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@supports (padding-top: env(safe-area-inset-top)) {
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .pl-safe {
+    padding-left: env(safe-area-inset-left, 0px);
+  }
+  .pr-safe {
+    padding-right: env(safe-area-inset-right, 0px);
+  }
+}

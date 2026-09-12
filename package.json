@@ -1,0 +1,73 @@
+{
+  "name": "ielts-forme",
+  "version": "0.1.0",
+  "description": "IELTS Mastery 7.5 - Nền tảng cá nhân hóa luyện thi IELTS từ Band 4.0 lên 7.5 trong 180 ngày",
+  "author": "Huyền Phạm <huyenpham@ieltsmastery.vn>",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "next dev --turbo",
+    "dev:webpack": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "start:dual": "node server.js",
+    "desktop": "electron .",
+    "electron:dev": "concurrently -k \"next dev\" \"wait-on tcp:3000 && electron .\"",
+    "desktop:start": "concurrently -k \"next start\" \"wait-on tcp:3000 && electron .\"",
+    "desktop:dist": "next build && electron-builder"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "dexie": "^4.4.5",
+    "dexie-react-hooks": "^4.4.0",
+    "lucide-react": "^0.475.0",
+    "next": "^14.2.24",
+    "next-themes": "^0.4.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.19",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^10.0.5",
+    "cross-env": "^10.1.0",
+    "electron": "^44.2.0",
+    "electron-builder": "^26.15.3",
+    "png-to-ico": "^3.0.2",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.3",
+    "wait-on": "^9.1.0"
+  },
+  "build": {
+    "appId": "com.ieltsmastery.app",
+    "productName": "IELTS Mastery 7.5",
+    "directories": {
+      "output": "dist-desktop"
+    },
+    "files": [
+      "electron/**/*",
+      "public/**/*",
+      "package.json"
+    ],
+    "npmRebuild": false,
+    "nodeGypRebuild": false,
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "public/icons/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "IELTS Mastery 7.5"
+    }
+  }
+}
