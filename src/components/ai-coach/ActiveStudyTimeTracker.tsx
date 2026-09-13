@@ -76,7 +76,7 @@ export function ActiveStudyTimeTracker({
   const targetHours = (dailyTargetSeconds / 3600).toFixed(1);
   const progressPercent = Math.min(100, Math.round((activeSeconds / dailyTargetSeconds) * 100));
 
-  // Weekly study history (starts at 0 before official start on 12/9/2026)
+  // Weekly study history (starts at 0 before official start on 14/9/2026)
   const weeklyRecords = [
     { day: "T2", hours: 0, isMet: false },
     { day: "T3", hours: 0, isMet: false },
@@ -126,7 +126,7 @@ export function ActiveStudyTimeTracker({
         {/* Streak Counter */}
         <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-orange-500/10 border border-orange-500/30 text-orange-600 dark:text-orange-400 self-start sm:self-auto font-mono text-xs font-black">
           <Flame className="h-4 w-4 fill-orange-500 text-orange-500 animate-bounce" />
-          <span>{streakDays === 0 ? "Bắt đầu 12/9/2026 (0 Ngày)" : `${streakDays} Ngày Liên Tiếp`}</span>
+          <span>{streakDays === 0 ? "Bắt đầu 14/9/2026 (0 Ngày)" : `${streakDays} Ngày Liên Tiếp`}</span>
         </div>
       </div>
 
@@ -161,7 +161,7 @@ export function ActiveStudyTimeTracker({
         {/* Right Weekly Discipline Bars (Cols 6-12) */}
         <div className="md:col-span-7 space-y-2">
           <span className="text-xs font-bold text-foreground block">
-            Thời Gian Học 7 Ngày Qua (Khởi động: 12/9/2026):
+            Thời Gian Học 7 Ngày Qua (Khởi động: 14/9/2026):
           </span>
 
           <div className="grid grid-cols-7 gap-2 pt-1">

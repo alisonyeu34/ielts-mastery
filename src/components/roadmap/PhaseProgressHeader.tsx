@@ -54,7 +54,7 @@ export function PhaseProgressHeader({
             Lộ Trình Học 165 Ngày (Band 4.5 ➔ 7.5)
           </h2>
           <p className="text-xs text-muted-foreground">
-            Khởi động ngày mai: 12/9/2026 • Mục tiêu 2-3 tiếng/ngày • 3 Giai đoạn học tập
+            Khởi động ngày mai: 14/9/2026 • Mục tiêu 2-3 tiếng/ngày • 3 Giai đoạn học tập
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export function PhaseProgressHeader({
             <div>
               <span className="text-[10px] uppercase font-bold block leading-none">Chuỗi Học</span>
               <span className="text-sm font-black font-mono">
-                {stats.streakDays === 0 ? "0 Ngày (Bắt đầu 12/9)" : `${stats.streakDays} Ngày Liên Tục`}
+                {stats.streakDays === 0 ? "0 Ngày (Bắt đầu 14/9)" : `${stats.streakDays} Ngày Liên Tục`}
               </span>
             </div>
           </div>
@@ -87,7 +87,7 @@ export function PhaseProgressHeader({
         <div className="p-4 rounded-2xl bg-red-500/[0.04] border border-red-500/30 space-y-2">
           <div className="flex items-center justify-between text-xs">
             <span className="font-extrabold text-red-700 dark:text-red-400">
-              Giai đoạn 1: 14 Ngày Cứu Ngữ Pháp (12/9 - 25/9)
+              Giai đoạn 1: 14 Ngày Cứu Ngữ Pháp (14/9 - 27/9)
             </span>
             <span className="font-mono font-bold text-muted-foreground">
               {stats.phase1Percent}% (Ngày 1-14)
@@ -105,7 +105,7 @@ export function PhaseProgressHeader({
         <div className="p-4 rounded-2xl bg-rose-500/[0.04] border border-rose-500/20 space-y-2">
           <div className="flex items-center justify-between text-xs">
             <span className="font-extrabold text-rose-700 dark:text-rose-400">
-              Giai đoạn 2: Chiến Thuật 4 Kỹ Năng (12/10 - 26/11)
+              Giai đoạn 2: Chiến Thuật 4 Kỹ Năng (14/10 - 28/11)
             </span>
             <span className="font-mono font-bold text-muted-foreground">
               {stats.phase2Percent}% (Ngày 32-77)
@@ -123,7 +123,7 @@ export function PhaseProgressHeader({
         <div className="p-4 rounded-2xl bg-amber-500/[0.04] border border-amber-500/20 space-y-2">
           <div className="flex items-center justify-between text-xs">
             <span className="font-extrabold text-amber-600 dark:text-amber-400">
-              Giai đoạn 3: Luyện Đề Về Đích (27/11 - 22/2)
+              Giai đoạn 3: Luyện Đề Về Đích (29/11 - 24/2)
             </span>
             <span className="font-mono font-bold text-muted-foreground">
               {stats.phase3Percent}% (Ngày 78-165)

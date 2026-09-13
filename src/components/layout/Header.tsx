@@ -81,7 +81,7 @@ export function Header({ sidebarCollapsed }: HeaderProps) {
               prefetch={true}
               className="text-red-700 dark:text-red-400 font-medium hover:underline"
             >
-              Giai đoạn 1: 14 Ngày Cứu Ngữ Pháp (12/9 - 25/9)
+              Giai đoạn 1: 14 Ngày Cứu Ngữ Pháp (14/9 - 27/9)
             </Link>
           </div>
 

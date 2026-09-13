@@ -24,7 +24,7 @@ const LISTENING_SECTIONS = [
     badge: "Phase 1: Cam 11 - 14",
     badgeColor: "bg-blue-500/10 text-blue-600 border-blue-500/20",
     icon: Compass,
-    recommendedFor: "Giai đoạn 1 (12/9 - 12/10)",
+    recommendedFor: "Giai đoạn 1 (14/9 - 14/10)",
   },
   {
     id: "dictation",

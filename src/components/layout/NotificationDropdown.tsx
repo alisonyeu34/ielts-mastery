@@ -66,7 +66,7 @@ export const NotificationDropdown: React.FC<NotificationDropdownProps> = ({
       id: 'notif-1',
       type: 'readiness',
       title: 'Chào mừng bạn đến với lộ trình 180 Ngày!',
-      message: 'Hệ thống đã chuẩn bị sẵn sàng cho ngày học đầu tiên (12/9/2026). Mục tiêu: Bứt phá lên Band 7.5.',
+      message: 'Hệ thống đã chuẩn bị sẵn sàng cho ngày học đầu tiên (14/9/2026). Mục tiêu: Bứt phá lên Band 7.5.',
       timeAgo: 'Hôm nay',
       unread: true,
       href: '/roadmap',
@@ -108,7 +108,7 @@ export const NotificationDropdown: React.FC<NotificationDropdownProps> = ({
       title: 'Chuỗi Học Tập',
       message: streakDays > 0
         ? `Bạn đang duy trì chuỗi ${streakDays} ngày liên tiếp!`
-        : 'Bắt đầu học ngày mai (12/9/2026) để khởi động chuỗi ngày học đầu tiên nhé!',
+        : 'Bắt đầu học ngày mai (14/9/2026) để khởi động chuỗi ngày học đầu tiên nhé!',
       timeAgo: 'Hôm nay',
       unread: false,
       href: '/theory',
