@@ -30,6 +30,7 @@ import { PronounceWordButton } from "./PronounceWordButton";
 import { Band75RecommendationBadge } from "./Band75RecommendationBadge";
 import { TheorySpeakerButton } from "./TheorySpeakerButton";
 import { TheoryItemRecallBox } from "./TheoryItemRecallBox";
+import { TheoryMaskableContent } from "./TheoryMaskableContent";
 import { cn } from "@/lib/utils";
 
 interface ExaminerTrapSectionProps {
@@ -169,63 +170,68 @@ export function ExaminerTrapSection({
               </div>
 
               {/* Side-by-Side Dual Comparison */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {/* Band 5.0 Error */}
-                <div className="p-4 rounded-2xl bg-rose-500/[0.04] border border-rose-500/30 space-y-2">
-                  <div className="flex items-center justify-between gap-1 text-rose-600 dark:text-rose-400 font-bold font-mono text-[10px] uppercase">
-                    <div className="flex items-center gap-1.5">
-                      <XCircle className="h-3.5 w-3.5" />
-                      <span>Sai lầm Band 5.0 (Bị trừ điểm GRA):</span>
+              <TheoryMaskableContent
+                itemId={`recall_grammar_${lesson.id}_trap_${tIdx}`}
+                itemTitle={`Bẫy ${tIdx + 1}: ${trap.trapNameVi}`}
+              >
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* Band 5.0 Error */}
+                  <div className="p-4 rounded-2xl bg-rose-500/[0.04] border border-rose-500/30 space-y-2">
+                    <div className="flex items-center justify-between gap-1 text-rose-600 dark:text-rose-400 font-bold font-mono text-[10px] uppercase">
+                      <div className="flex items-center gap-1.5">
+                        <XCircle className="h-3.5 w-3.5" />
+                        <span>Sai lầm Band 5.0 (Bị trừ điểm GRA):</span>
+                      </div>
+                      <PronounceWordButton word={trap.band50WrongExample} size="xs" title="Nghe câu mẫu lỗi Band 5.0" />
                     </div>
-                    <PronounceWordButton word={trap.band50WrongExample} size="xs" title="Nghe câu mẫu lỗi Band 5.0" />
+
+                    <p className="font-serif line-through text-foreground font-bold text-xs leading-relaxed">
+                      &ldquo;{trap.band50WrongExample}&rdquo;
+                    </p>
+
+                    {trap.band50TranslationVi && (
+                      <div className="pt-1.5 border-t border-rose-500/20 text-[11px] text-muted-foreground flex items-start gap-1.5">
+                        <Languages className="h-3 w-3 text-rose-500 shrink-0 mt-0.5" />
+                        <span className="italic leading-relaxed">
+                          <strong className="text-rose-600 dark:text-rose-400 not-italic">Dịch:</strong> {trap.band50TranslationVi}
+                        </span>
+                      </div>
+                    )}
+
+                    <p className="text-[11px] text-muted-foreground leading-relaxed pt-1 border-t border-rose-500/20">
+                      ⚠️ <strong>Nguyên nhân sai:</strong> {trap.band50FlawAnalysisVi}
+                    </p>
                   </div>
 
-                  <p className="font-serif line-through text-foreground font-bold text-xs leading-relaxed">
-                    &ldquo;{trap.band50WrongExample}&rdquo;
-                  </p>
-
-                  {trap.band50TranslationVi && (
-                    <div className="pt-1.5 border-t border-rose-500/20 text-[11px] text-muted-foreground flex items-start gap-1.5">
-                      <Languages className="h-3 w-3 text-rose-500 shrink-0 mt-0.5" />
-                      <span className="italic leading-relaxed">
-                        <strong className="text-rose-600 dark:text-rose-400 not-italic">Dịch:</strong> {trap.band50TranslationVi}
-                      </span>
+                  {/* Band 8.0+ Correction */}
+                  <div className="p-4 rounded-2xl bg-emerald-500/[0.04] border border-emerald-500/30 space-y-2">
+                    <div className="flex items-center justify-between gap-1 text-emerald-600 dark:text-emerald-400 font-bold font-mono text-[10px] uppercase">
+                      <div className="flex items-center gap-1.5">
+                        <CheckCircle2 className="h-3.5 w-3.5" />
+                        <span>Cách dùng chuẩn Band 8.0+ (Ăn trọn điểm):</span>
+                      </div>
+                      <PronounceWordButton word={trap.band80CorrectExample} size="xs" title="Nghe câu chuẩn Band 8.0+" />
                     </div>
-                  )}
 
-                  <p className="text-[11px] text-muted-foreground leading-relaxed pt-1 border-t border-rose-500/20">
-                    ⚠️ <strong>Nguyên nhân sai:</strong> {trap.band50FlawAnalysisVi}
-                  </p>
-                </div>
+                    <p className="font-serif text-foreground font-bold text-xs leading-relaxed">
+                      &ldquo;{trap.band80CorrectExample}&rdquo;
+                    </p>
 
-                {/* Band 8.0+ Correction */}
-                <div className="p-4 rounded-2xl bg-emerald-500/[0.04] border border-emerald-500/30 space-y-2">
-                  <div className="flex items-center justify-between gap-1 text-emerald-600 dark:text-emerald-400 font-bold font-mono text-[10px] uppercase">
-                    <div className="flex items-center gap-1.5">
-                      <CheckCircle2 className="h-3.5 w-3.5" />
-                      <span>Cách dùng chuẩn Band 8.0+ (Ăn trọn điểm):</span>
-                    </div>
-                    <PronounceWordButton word={trap.band80CorrectExample} size="xs" title="Nghe câu chuẩn Band 8.0+" />
+                    {trap.band80TranslationVi && (
+                      <div className="pt-1.5 border-t border-emerald-500/20 text-[11px] text-foreground/90 flex items-start gap-1.5">
+                        <Languages className="h-3 w-3 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
+                        <span className="leading-relaxed">
+                          <strong className="text-emerald-600 dark:text-emerald-400">Dịch:</strong> {trap.band80TranslationVi}
+                        </span>
+                      </div>
+                    )}
+
+                    <p className="text-[11px] text-emerald-700 dark:text-emerald-300 leading-relaxed pt-1 border-t border-emerald-500/20 font-medium">
+                      💡 <strong>Ghi chú Giám khảo:</strong> {trap.examinerNoteVi}
+                    </p>
                   </div>
-
-                  <p className="font-serif text-foreground font-bold text-xs leading-relaxed">
-                    &ldquo;{trap.band80CorrectExample}&rdquo;
-                  </p>
-
-                  {trap.band80TranslationVi && (
-                    <div className="pt-1.5 border-t border-emerald-500/20 text-[11px] text-foreground/90 flex items-start gap-1.5">
-                      <Languages className="h-3 w-3 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
-                      <span className="leading-relaxed">
-                        <strong className="text-emerald-600 dark:text-emerald-400">Dịch:</strong> {trap.band80TranslationVi}
-                      </span>
-                    </div>
-                  )}
-
-                  <p className="text-[11px] text-emerald-700 dark:text-emerald-300 leading-relaxed pt-1 border-t border-emerald-500/20 font-medium">
-                    💡 <strong>Ghi chú Giám khảo:</strong> {trap.examinerNoteVi}
-                  </p>
                 </div>
-              </div>
+              </TheoryMaskableContent>
 
               {/* Vocabulary Breakdown for Trap */}
               {trap.wordBreakdown && trap.wordBreakdown.length > 0 && (() => {

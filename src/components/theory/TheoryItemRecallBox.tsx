@@ -83,6 +83,37 @@ export function TheoryItemRecallBox({
     };
   }, [itemId, isOpen]);
 
+  const boxRef = React.useRef<HTMLDivElement>(null);
+
+  // Auto-mask fallback for previous sibling element if no explicit TheoryMaskableContent was wrapped
+  useEffect(() => {
+    if (!hasLoaded || typeof document === "undefined") return;
+    const existingMaskedEl = document.querySelector(`[data-theory-masked-item="${itemId}"]`);
+
+    if (!existingMaskedEl && boxRef.current) {
+      const prevEl = boxRef.current.previousElementSibling as HTMLElement | null;
+      if (prevEl) {
+        if (isOpen) {
+          prevEl.classList.add("theory-auto-masked-fallback");
+          prevEl.setAttribute("data-auto-masked-by", itemId);
+        } else {
+          prevEl.classList.remove("theory-auto-masked-fallback");
+          prevEl.removeAttribute("data-auto-masked-by");
+        }
+      }
+    }
+
+    return () => {
+      if (boxRef.current) {
+        const prevEl = boxRef.current.previousElementSibling as HTMLElement | null;
+        if (prevEl && prevEl.getAttribute("data-auto-masked-by") === itemId) {
+          prevEl.classList.remove("theory-auto-masked-fallback");
+          prevEl.removeAttribute("data-auto-masked-by");
+        }
+      }
+    };
+  }, [itemId, isOpen, hasLoaded]);
+
   const handleToggle = () => {
     const nextState = !isOpen;
     setIsOpen(nextState);
@@ -144,6 +175,8 @@ export function TheoryItemRecallBox({
 
   return (
     <div
+      ref={boxRef}
+      data-theory-recall-box={itemId}
       className={cn(
         "w-full block select-none transition-all",
         !children && "mt-3 pt-2.5 border-t border-border/70 text-xs",

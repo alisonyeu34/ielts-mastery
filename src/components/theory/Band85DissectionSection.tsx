@@ -32,6 +32,7 @@ import { PronounceWordButton } from "./PronounceWordButton";
 import { Band75RecommendationBadge } from "./Band75RecommendationBadge";
 import { TheorySpeakerButton } from "./TheorySpeakerButton";
 import { TheoryItemRecallBox } from "./TheoryItemRecallBox";
+import { TheoryMaskableContent } from "./TheoryMaskableContent";
 import { cn } from "@/lib/utils";
 
 interface Band85DissectionSectionProps {
@@ -189,57 +190,62 @@ export function Band85DissectionSection({
                 </div>
               </div>
 
-              {/* Sentence Card with Audio Play button */}
-              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 p-4 rounded-2xl bg-card border border-border shadow-xs">
-                <div className="space-y-1.5 flex-1">
-                  <p className="font-serif font-bold text-foreground text-sm sm:text-base leading-relaxed">
-                    &ldquo;{item.originalSentence}&rdquo;
-                  </p>
-                </div>
-
-                <button
-                  type="button"
-                  onClick={() => handlePlayAudio(item.originalSentence, dIdx)}
-                  className={cn(
-                    "p-3 rounded-2xl border transition-all flex items-center gap-1.5 cursor-pointer shrink-0 self-start sm:self-auto",
-                    isPlaying
-                      ? "bg-emerald-600 text-white border-emerald-600 ring-2 ring-emerald-500/40 animate-pulse"
-                      : "bg-secondary text-foreground hover:bg-secondary/80 border-border"
-                  )}
-                  title="Nghe phát âm giọng chuẩn Anh - Anh"
-                >
-                  <Volume2 className="h-4 w-4" />
-                  <span className="text-[10px] font-bold font-mono">
-                    {isPlaying ? "Đang đọc..." : "Nghe Audio"}
-                  </span>
-                </button>
-              </div>
-
-              {/* Vietnamese Translation of Original Sentence */}
-              {item.vietnameseTranslation && (
-                <div className="p-3.5 rounded-2xl bg-secondary/40 border border-border/70 space-y-1">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="text-[10px] font-mono font-bold text-muted-foreground uppercase flex items-center gap-1.5">
-                      <Languages className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
-                      Bản Dịch Tiếng Việt Chuẩn Nghĩa:
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() =>
-                        setShowTrans((prev) => ({ ...prev, [dIdx]: !isTransVisible }))
-                      }
-                      className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 hover:underline cursor-pointer"
-                    >
-                      {isTransVisible ? "Thu gọn" : "Xem dịch"}
-                    </button>
-                  </div>
-                  {isTransVisible && (
-                    <p className="text-xs text-foreground/90 leading-relaxed font-medium pt-0.5 animate-in fade-in">
-                      {item.vietnameseTranslation}
+              {/* Sentence Card with Audio Play button & Translation */}
+              <TheoryMaskableContent
+                itemId={`recall_grammar_${lesson.id}_disc_${dIdx}`}
+                itemTitle={`Mổ xẻ Band 8.5+: ${item.grammaticalFeature}`}
+              >
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 p-4 rounded-2xl bg-card border border-border shadow-xs">
+                  <div className="space-y-1.5 flex-1">
+                    <p className="font-serif font-bold text-foreground text-sm sm:text-base leading-relaxed">
+                      &ldquo;{item.originalSentence}&rdquo;
                     </p>
-                  )}
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={() => handlePlayAudio(item.originalSentence, dIdx)}
+                    className={cn(
+                      "p-3 rounded-2xl border transition-all flex items-center gap-1.5 cursor-pointer shrink-0 self-start sm:self-auto",
+                      isPlaying
+                        ? "bg-emerald-600 text-white border-emerald-600 ring-2 ring-emerald-500/40 animate-pulse"
+                        : "bg-secondary text-foreground hover:bg-secondary/80 border-border"
+                    )}
+                    title="Nghe phát âm giọng chuẩn Anh - Anh"
+                  >
+                    <Volume2 className="h-4 w-4" />
+                    <span className="text-[10px] font-bold font-mono">
+                      {isPlaying ? "Đang đọc..." : "Nghe Audio"}
+                    </span>
+                  </button>
                 </div>
-              )}
+
+                {/* Vietnamese Translation of Original Sentence */}
+                {item.vietnameseTranslation && (
+                  <div className="p-3.5 rounded-2xl bg-secondary/40 border border-border/70 space-y-1 mt-3">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="text-[10px] font-mono font-bold text-muted-foreground uppercase flex items-center gap-1.5">
+                        <Languages className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
+                        Bản Dịch Tiếng Việt Chuẩn Nghĩa:
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setShowTrans((prev) => ({ ...prev, [dIdx]: !isTransVisible }))
+                        }
+                        className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 hover:underline cursor-pointer"
+                      >
+                        {isTransVisible ? "Thu gọn" : "Xem dịch"}
+                      </button>
+                    </div>
+                    {isTransVisible && (
+                      <p className="text-xs text-foreground/90 leading-relaxed font-medium pt-0.5 animate-in fade-in">
+                        {item.vietnameseTranslation}
+                      </p>
+                    )}
+                  </div>
+                )}
+              </TheoryMaskableContent>
 
               {/* Vocabulary Breakdown for Dissection */}
               {item.wordBreakdown && item.wordBreakdown.length > 0 && (() => {

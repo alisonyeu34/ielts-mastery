@@ -500,55 +500,60 @@ export function ConceptPrinciplesSection({
                   </div>
                 </div>
 
-                {/* Explanation */}
-                <p className="text-foreground/90 leading-relaxed font-medium text-xs">
-                  {usage.explanationVi}
-                </p>
+                <TheoryMaskableContent
+                  itemId={`recall_grammar_${lesson.id}_usage_${uIdx}`}
+                  itemTitle={`Trường Hợp: ${usage.scenarioTitle}`}
+                >
+                  {/* Explanation */}
+                  <p className="text-foreground/90 leading-relaxed font-medium text-xs">
+                    {usage.explanationVi}
+                  </p>
 
-                {/* Signal Clues */}
-                {usage.signalClues && usage.signalClues.length > 0 && (
-                  <div className="flex items-center gap-2 flex-wrap text-[11px]">
-                    <span className="font-bold text-muted-foreground font-mono text-[10px] uppercase">
-                      Dấu hiệu nhận biết:
-                    </span>
-                    {usage.signalClues.map((clue, cIdx) => (
-                      <span
-                        key={cIdx}
-                        className="px-2 py-0.5 rounded-md bg-secondary border border-border text-foreground font-mono text-[10px]"
-                      >
-                        {clue}
+                  {/* Signal Clues */}
+                  {usage.signalClues && usage.signalClues.length > 0 && (
+                    <div className="flex items-center gap-2 flex-wrap text-[11px] mt-2">
+                      <span className="font-bold text-muted-foreground font-mono text-[10px] uppercase">
+                        Dấu hiệu nhận biết:
                       </span>
-                    ))}
-                  </div>
-                )}
+                      {usage.signalClues.map((clue, cIdx) => (
+                        <span
+                          key={cIdx}
+                          className="px-2 py-0.5 rounded-md bg-secondary border border-border text-foreground font-mono text-[10px]"
+                        >
+                          {clue}
+                        </span>
+                      ))}
+                    </div>
+                  )}
 
-                {/* IELTS Application */}
-                <div className="p-3 rounded-xl bg-blue-500/[0.06] border border-blue-500/20 text-xs text-blue-900 dark:text-blue-200 leading-relaxed">
-                  💡 <strong>Ứng dụng IELTS:</strong> {usage.ieltsApplicationVi}
-                </div>
-
-                {/* Examples */}
-                <div className="space-y-2 pt-1">
-                  <span className="text-[10px] font-mono font-bold text-muted-foreground uppercase">
-                    Ví dụ phân tích:
-                  </span>
-                  <div className="grid gap-2">
-                    {usage.examples.map((eg, egIdx) => (
-                      <div
-                        key={egIdx}
-                        className="p-3 rounded-xl bg-card border border-border/80 space-y-1 text-xs"
-                      >
-                        <p className="font-serif font-bold text-foreground text-xs sm:text-sm">
-                          "{eg.en}"
-                        </p>
-                        <p className="text-muted-foreground text-[11px] italic">➔ {eg.vi}</p>
-                        <p className="text-[11px] text-emerald-600 dark:text-emerald-400 font-mono font-medium pt-1 border-t border-border/60">
-                          ⚙️ <strong>Phân tích:</strong> {eg.analysis}
-                        </p>
-                      </div>
-                    ))}
+                  {/* IELTS Application */}
+                  <div className="p-3 rounded-xl bg-blue-500/[0.06] border border-blue-500/20 text-xs text-blue-900 dark:text-blue-200 leading-relaxed mt-2.5">
+                    💡 <strong>Ứng dụng IELTS:</strong> {usage.ieltsApplicationVi}
                   </div>
-                </div>
+
+                  {/* Examples */}
+                  <div className="space-y-2 pt-1 mt-2.5">
+                    <span className="text-[10px] font-mono font-bold text-muted-foreground uppercase">
+                      Ví dụ phân tích:
+                    </span>
+                    <div className="grid gap-2">
+                      {usage.examples.map((eg, egIdx) => (
+                        <div
+                          key={egIdx}
+                          className="p-3 rounded-xl bg-card border border-border/80 space-y-1 text-xs"
+                        >
+                          <p className="font-serif font-bold text-foreground text-xs sm:text-sm">
+                            "{eg.en}"
+                          </p>
+                          <p className="text-muted-foreground text-[11px] italic">➔ {eg.vi}</p>
+                          <p className="text-[11px] text-emerald-600 dark:text-emerald-400 font-mono font-medium pt-1 border-t border-border/60">
+                            ⚙️ <strong>Phân tích:</strong> {eg.analysis}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </TheoryMaskableContent>
 
                 <TheoryItemRecallBox
                   itemId={`recall_grammar_${lesson.id}_usage_${uIdx}`}
@@ -693,6 +698,10 @@ export function ConceptPrinciplesSection({
                         />
                       </div>
 
+                    <TheoryMaskableContent
+                      itemId={`recall_grammar_${lesson.id}_pronunciation_${gIdx}`}
+                      itemTitle={`Phát Âm IPA ${guide.soundIpa}`}
+                    >
                       <p className="text-foreground/90 text-[11px] leading-relaxed">
                         {guide.phoneticConditionVi}
                       </p>
@@ -710,12 +719,13 @@ export function ConceptPrinciplesSection({
                           </div>
                         ))}
                       </div>
-                    </div>
 
-                    {/* Mnemonic callout */}
-                    <div className="p-2.5 rounded-xl bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/30 text-[11px] text-amber-800 dark:text-amber-200 font-medium">
-                      🎯 <strong>Thần chú:</strong> "{guide.memoryMnemonicVi}"
-                    </div>
+                      {/* Mnemonic callout */}
+                      <div className="p-2.5 rounded-xl bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/30 text-[11px] text-amber-800 dark:text-amber-200 font-medium mt-2.5">
+                        🎯 <strong>Thần chú:</strong> "{guide.memoryMnemonicVi}"
+                      </div>
+                    </TheoryMaskableContent>
+                  </div>
 
                     <TheoryItemRecallBox
                       itemId={`recall_grammar_${lesson.id}_pronunciation_${gIdx}`}

@@ -103,3 +103,12 @@ html {
     padding-right: env(safe-area-inset-right, 0px);
   }
 }
+
+/* Theory Recall Mask Fallback */
+.theory-auto-masked-fallback {
+  filter: blur(10px) !important;
+  opacity: 0.1 !important;
+  user-select: none !important;
+  pointer-events: none !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}

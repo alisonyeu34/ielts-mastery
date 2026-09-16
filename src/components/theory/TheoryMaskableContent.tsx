@@ -32,6 +32,7 @@ export function TheoryMaskableContent({
 
   return (
     <div
+      data-theory-masked-item={itemId}
       className={cn(
         "relative transition-all duration-300",
         shouldMask && "min-h-[76px]",

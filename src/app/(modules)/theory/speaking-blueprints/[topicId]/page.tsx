@@ -478,43 +478,48 @@ export default function SpeakingBlueprintDetailPage() {
             </div>
           </div>
 
-          <div className="space-y-3">
-              {lesson.step1Principles.tacticalFrameworkVi.map((step, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-start justify-between gap-3 p-3.5 rounded-2xl bg-secondary/40 border border-border/60 text-xs text-foreground/90"
-                >
-                  <div className="flex items-start gap-3 flex-1 min-w-0">
-                    <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-sky-500 text-white font-mono font-bold shrink-0 mt-0.5">
-                      {idx + 1}
-                    </span>
-                    <p className="mt-0.5 leading-relaxed font-medium">{step}</p>
+            <TheoryMaskableContent
+              itemId={`recall_speaking_${lesson.id}_tactics`}
+              itemTitle="Khung Chiến Thuật Khảo Thí"
+            >
+              <div className="space-y-3">
+                {lesson.step1Principles.tacticalFrameworkVi.map((step, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-start justify-between gap-3 p-3.5 rounded-2xl bg-secondary/40 border border-border/60 text-xs text-foreground/90"
+                  >
+                    <div className="flex items-start gap-3 flex-1 min-w-0">
+                      <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-sky-500 text-white font-mono font-bold shrink-0 mt-0.5">
+                        {idx + 1}
+                      </span>
+                      <p className="mt-0.5 leading-relaxed font-medium">{step}</p>
+                    </div>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <TheorySpeakerButton
+                        text={`Bước ${idx + 1}: ${step}`}
+                        size="icon-only"
+                      />
+                      <TheoryBookmarkButton
+                        item={{
+                          id: `bm_speaking_${lesson.id}_tactical_step_${idx}`,
+                          lessonId: lesson.id,
+                          lessonTitle: lesson.title,
+                          skill: "speaking",
+                          category: "rule",
+                          categoryLabelVi: "Chiến Thuật Speaking",
+                          title: `${lesson.title} • Bước ${idx + 1}`,
+                          content: step,
+                          lessonHref: `/theory/speaking-blueprints/${lesson.id}`,
+                        }}
+                        label="Lưu"
+                        savedLabel="Đã lưu ✓"
+                        size="sm"
+                      />
+                    </div>
                   </div>
-                  <div className="flex items-center gap-1.5 shrink-0">
-                    <TheorySpeakerButton
-                      text={`Bước ${idx + 1}: ${step}`}
-                      size="icon-only"
-                    />
-                    <TheoryBookmarkButton
-                      item={{
-                        id: `bm_speaking_${lesson.id}_tactical_step_${idx}`,
-                        lessonId: lesson.id,
-                        lessonTitle: lesson.title,
-                        skill: "speaking",
-                        category: "rule",
-                        categoryLabelVi: "Chiến Thuật Speaking",
-                        title: `${lesson.title} • Bước ${idx + 1}`,
-                        content: step,
-                        lessonHref: `/theory/speaking-blueprints/${lesson.id}`,
-                      }}
-                      label="Lưu"
-                      savedLabel="Đã lưu ✓"
-                      size="sm"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            </TheoryMaskableContent>
             <TheoryItemRecallBox
               itemId={`recall_speaking_${lesson.id}_tactics`}
               itemTitle="Khung Chiến Thuật Khảo Thí"
@@ -677,6 +682,11 @@ export default function SpeakingBlueprintDetailPage() {
                         )}
                       </div>
                     </div>
+
+                    <div className="p-3.5 rounded-2xl bg-secondary/50 border border-border text-xs text-muted-foreground leading-relaxed mt-3">
+                      <strong className="text-foreground">Examiner Insight: </strong>
+                      {trap.examinerInsightVi}
+                    </div>
                   </TheoryMaskableContent>
 
                   {/* Vocabulary Breakdown with 1-Click FSRS Save */}
@@ -780,11 +790,6 @@ export default function SpeakingBlueprintDetailPage() {
                       </div>
                     );
                   })()}
-
-                  <div className="p-3.5 rounded-2xl bg-secondary/50 border border-border text-xs text-muted-foreground leading-relaxed">
-                    <strong className="text-foreground">Examiner Insight: </strong>
-                    {trap.examinerInsightVi}
-                  </div>
 
                   <TheoryItemRecallBox
                     itemId={`recall_speaking_${lesson.id}_trap_${idx}`}
