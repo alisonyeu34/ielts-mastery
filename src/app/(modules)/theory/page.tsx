@@ -115,7 +115,7 @@ export default function TheoryCatalogPage() {
               Nguyên Tắc Bất Di Bất Dịch: Học Lý Thuyết Trước ➔ Luyện Dạng Bài ➔ Mới Giải Đề
             </h4>
             <span className="text-muted-foreground">
-              Khi ở Band 4.5 - 5.5, bắt buộc xây vững <strong>14 Ngày Cứu Ngữ Pháp Cấp Tốc (14/9 - 27/9)</strong> trước khi giải đề Cam và học từ vựng C1/C2.
+              Khi ở Band 4.5 - 5.5, bắt buộc xây vững <strong>14 Ngày Cứu Ngữ Pháp Cấp Tốc (16/9 - 29/9)</strong> trước khi giải đề Cam và học từ vựng C1/C2.
             </span>
           </div>
         </div>

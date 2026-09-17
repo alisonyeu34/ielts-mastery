@@ -150,7 +150,7 @@ export default function UserGuidePage() {
               <Target className="h-4 w-4" /> R: 8.5 • L: 8.0 • W: 6.5 • S: 6.0
             </div>
             <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
-              <Calendar className="h-4 w-4" /> Bắt đầu: 14/9/2026
+              <Calendar className="h-4 w-4" /> Bắt đầu: 16/9/2026
             </div>
             <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20 font-mono font-bold">
               <Clock className="h-4 w-4" /> 7h Thực Học (4 ca x 105m) • 10h Ngồi Bàn
@@ -1143,7 +1143,7 @@ export default function UserGuidePage() {
           <div className="space-y-3">
             {[
               {
-                q: "Tôi nên bắt đầu từ bài nào trong ngày đầu tiên (14/9/2026)?",
+                q: "Tôi nên bắt đầu từ bài nào trong ngày đầu tiên (16/9/2026)?",
                 a: "Theo đúng quy luật 'Nạp trước - Xả sau', hãy bắt đầu từ Ca 1: Vào mục 'Luyện Đọc Hiểu 2 Cột' (Reading Split-View), chọn bài đầu tiên 'The Biomimetic Revolution'. Đọc văn bản, áp dụng quản trị thời gian 15-20-25p, nạp 35 từ Passive Vocab vào Sổ FSRS. Sau đó nghỉ 30 phút rồi chuyển sang Ca 2 Listening!",
               },
               {

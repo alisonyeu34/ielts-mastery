@@ -196,7 +196,7 @@ export function MicroWinsModal({ isOpen, onClose }: MicroWinsModalProps) {
                 Mục Tiêu 31 Ngày
               </span>
               <span className="text-[10px] text-muted-foreground font-medium">
-                (14/9 - 14/10/2026)
+                (16/9 - 16/10/2026)
               </span>
             </div>
           </div>

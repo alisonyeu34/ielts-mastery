@@ -157,7 +157,7 @@ export interface CoreGrammarTheoryLesson {
 
 export const MOCK_GRAMMAR_THEORY_LESSONS: CoreGrammarTheoryLesson[] = [
   // =========================================================================
-  // [PHASE 1 — GIAI ĐOẠN 1] LỘ TRÌNH 14 NGÀY CỨU NGỮ PHÁP CẤP TỐC (14/9 - 27/9/2026)
+  // [PHASE 1 — GIAI ĐOẠN 1] LỘ TRÌNH 14 NGÀY CỨU NGỮ PHÁP CẤP TỐC (16/9 - 29/9/2026)
   // =========================================================================
 {
     "id": "day1-present-simple-to-be",

@@ -753,7 +753,7 @@ export default function PracticeDashboardPage() {
             {isLoading ? "..." : `${totalSessions} phiên`}
           </div>
           <span className="text-[11px] text-muted-foreground">
-            {totalSessions === 0 ? "Chưa luyện bài nào (Bắt đầu 14/9)" : "Ghi nhận bài làm thực tế"}
+            {totalSessions === 0 ? "Chưa luyện bài nào (Bắt đầu 16/9)" : "Ghi nhận bài làm thực tế"}
           </span>
         </div>
 

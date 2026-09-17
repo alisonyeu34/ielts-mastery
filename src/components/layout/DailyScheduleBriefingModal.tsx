@@ -187,7 +187,7 @@ export function DailyScheduleBriefingModal({
                 Chuỗi ngày học
               </span>
               <p className="text-sm font-black text-amber-600 dark:text-amber-400">
-                {streak > 0 ? `${streak} ngày` : "Khởi động từ 14/9"}
+                {streak > 0 ? `${streak} ngày` : "Khởi động từ 16/9"}
               </p>
             </div>
           </div>

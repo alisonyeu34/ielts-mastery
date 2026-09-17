@@ -37,7 +37,7 @@ export function PhaseTracker({ className, compact = false }: PhaseTrackerProps) 
         <div className="flex items-center gap-3">
           <div className="text-right hidden sm:block">
             <div className="text-xs text-muted-foreground">Tiến độ tổng thể</div>
-            <div className="text-sm font-bold text-foreground">Ngày 1 / 165 (Khởi động 14/9)</div>
+            <div className="text-sm font-bold text-foreground">Ngày 1 / 165 (Khởi động 16/9)</div>
           </div>
           <button
             type="button"

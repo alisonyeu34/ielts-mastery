@@ -13,7 +13,7 @@
 
 ## 2. KIẾN TRÚC LỘ TRÌNH HỌC TẬP 165 NGÀY (ROADMAP TIMELINE)
 
-Lộ trình được thiết kế chi tiết theo từng ngày, khởi động từ mốc **14/09/2026** và chia thành **3 Giai đoạn (Phases)** có cơ chế khóa/mở chốt chặn (Gatekeeper Milestones):
+Lộ trình được thiết kế chi tiết theo từng ngày, khởi động từ mốc **16/09/2026** và chia thành **3 Giai đoạn (Phases)** có cơ chế khóa/mở chốt chặn (Gatekeeper Milestones):
 
 ### Phase 1: Cứu Ngữ Pháp Nền Tảng & Xây Gốc Phản Xạ (Ngày 1 $\rightarrow$ Ngày 31)
 - **Mục tiêu:** Quét sạch 14 trụ cột ngữ pháp học thuật, chuẩn hóa phát âm cốt lõi, xóa bỏ thói quen dịch ngầm từ tiếng Việt sang tiếng Anh.

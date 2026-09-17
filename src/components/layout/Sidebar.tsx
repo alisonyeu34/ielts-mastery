@@ -290,7 +290,7 @@ export function Sidebar({ className }: SidebarProps) {
               </div>
             </div>
           ) : (
-            <div className="flex flex-col items-center gap-1 py-1" title="Chuỗi 0 ngày (bắt đầu 14/9)">
+            <div className="flex flex-col items-center gap-1 py-1" title="Chuỗi 0 ngày (bắt đầu 16/9)">
               <Flame className={cn("h-5 w-5", isLowEnergy ? "text-amber-500 fill-amber-500" : "text-muted-foreground")} />
               <span className="text-[10px] font-bold">0d</span>
             </div>
