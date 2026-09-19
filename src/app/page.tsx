@@ -86,7 +86,7 @@ export default function HomePage() {
           <div className="space-y-3 max-w-2xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/10 px-3 py-1 text-xs font-semibold text-red-700 dark:text-red-400">
               <Sparkles className="h-3.5 w-3.5" />
-              <span>Lộ trình 165 Ngày Tự Động (5.5 Tháng) • Khởi động: 16/9/2026 (Ngày 1/165)</span>
+              <span>Lộ trình 165 Ngày Tự Động (5.5 Tháng) • Khởi động: 19/9/2026 (Ngày 1/165)</span>
             </div>
 
             <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-foreground">
@@ -94,7 +94,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-              Lộ trình học tập 3 giai đoạn vững vàng: <strong>14 Ngày Cứu Ngữ Pháp Nền Tảng (16/9 - 29/9)</strong> ➔ <strong>Chiến Thuật 4 Kỹ Năng & 2.500 Từ Chuyên Ngành Passage 3 (29/9 - 30/11)</strong> ➔ <strong>Luyện Đề Cambridge & Về Đích 7.5 (1/12 - 26/2)</strong>.
+              Lộ trình học tập 3 giai đoạn vững vàng: <strong>14 Ngày Cứu Ngữ Pháp Nền Tảng (19/9 - 2/10)</strong> ➔ <strong>Chiến Thuật 4 Kỹ Năng & 2.500 Từ Chuyên Ngành Passage 3 (2/10 - 3/12)</strong> ➔ <strong>Luyện Đề Cambridge & Về Đích 7.5 (4/12 - 1/3)</strong>.
             </p>
 
             <div className="flex wrap items-center gap-4 pt-2">
@@ -104,7 +104,7 @@ export default function HomePage() {
               </div>
               <div className="flex items-center gap-2 text-xs font-semibold text-foreground bg-secondary/80 px-3 py-1.5 rounded-xl border border-border">
                 <Flame className="h-4 w-4 text-muted-foreground" />
-                <span>Chuỗi học: 0 ngày (Bắt đầu 16/9)</span>
+                <span>Chuỗi học: 0 ngày (Bắt đầu 19/9)</span>
               </div>
               <div className="flex items-center gap-2 text-xs font-semibold text-foreground bg-secondary/80 px-3 py-1.5 rounded-xl border border-border">
                 <Clock className="h-4 w-4 text-red-600 dark:text-red-400" />
@@ -145,7 +145,7 @@ export default function HomePage() {
               href="/roadmap"
               className="w-full flex items-center justify-center gap-2 rounded-xl bg-red-700 hover:bg-red-800 text-white py-2.5 px-4 text-xs font-bold shadow-md shadow-red-700/30 transition-all hover:scale-[1.02]"
             >
-              Bắt đầu học Ngày 1 (16/9) <ArrowRight className="h-3.5 w-3.5" />
+              Bắt đầu học Ngày 1 (19/9) <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           </div>
         </div>
@@ -249,7 +249,7 @@ export default function HomePage() {
           <div className="flex items-center gap-2">
             <CheckCircle2 className="h-5 w-5 text-red-600 dark:text-red-400" />
             <h3 className="text-base font-bold text-foreground">
-              4 Ca Học Ngày 1 — Quy Luật "Nạp Trước - Xả Sau" (Khởi động: 16/9/2026)
+              4 Ca Học Ngày 1 — Quy Luật "Nạp Trước - Xả Sau" (Khởi động: 19/9/2026)
             </h3>
           </div>
           <span className="text-xs font-mono font-bold text-amber-600 dark:text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-xl self-start sm:self-auto">

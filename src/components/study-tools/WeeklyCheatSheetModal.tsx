@@ -90,7 +90,7 @@ export function WeeklyCheatSheetModal({ isOpen, onClose }: WeeklyCheatSheetModal
                   : "bg-secondary text-muted-foreground hover:text-foreground"
               )}
             >
-              Tuần 1 (16/9 - 22/9): Cứu Ngữ Pháp Phần 1 (Day 1 - 7: Các Thì Cốt Lõi)
+              Tuần 1 (19/9 - 25/9): Cứu Ngữ Pháp Phần 1 (Day 1 - 7: Các Thì Cốt Lõi)
             </button>
 
             <button
@@ -138,7 +138,7 @@ export function WeeklyCheatSheetModal({ isOpen, onClose }: WeeklyCheatSheetModal
               </div>
 
               <div className="text-left sm:text-right font-mono text-[11px] text-muted-foreground print:text-gray-500 shrink-0">
-                <div>Áp dụng: {selectedWeek === 1 ? "16/9/2026 - 22/9/2026" : "23/9/2026 - 29/9/2026"}</div>
+                <div>Áp dụng: {selectedWeek === 1 ? "19/9/2026 - 25/9/2026" : "26/9/2026 - 2/10/2026"}</div>
                 <div>Trang 1 / 1 (Khổ A4)</div>
               </div>
             </div>

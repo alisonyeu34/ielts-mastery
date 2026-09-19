@@ -39,12 +39,12 @@ export interface RoadmapDayNode {
 }
 
 // =============================================================================
-// GIAI ĐOẠN 1: "CỨU NGỮ PHÁP NỀN TẢNG & XÂY GỐC" (16/9 - 16/10/2026) — Ngày 1-31
+// GIAI ĐOẠN 1: "CỨU NGỮ PHÁP NỀN TẢNG & XÂY GỐC" (19/9 - 19/10/2026) — Ngày 1-31
 // =============================================================================
 
 const PHASE1_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
   1: {
-    title: "16/9 — Ngày 1: Khởi Động 4 Kỹ Năng • Dạy Kỹ Năng Trước - Luyện Tập Sau",
+    title: "19/9 — Ngày 1: Khởi Động 4 Kỹ Năng • Dạy Kỹ Năng Trước - Luyện Tập Sau",
     summary: "Ngồi bàn 10h • Thực học 7h (4 ca x 105m) • 3h nghỉ ngơi: Ca 1 Reading (Học Skimming 90s & Scanning ➔ Đọc hiểu 2 cột), Ca 2 Listening (Học quy trình 3 bước 30s & Bắt số Section 1 ➔ Dictation Cam 11 S1), Ca 3 Writing (Học 7 trụ cột ngữ pháp S-V-O ➔ Sentence Lab), Ca 4 Speaking (Học phản xạ Echo Shadowing ➔ Phản xạ Part 1 không IPA).",
     focusSkill: "all",
     tasks: [
@@ -55,7 +55,7 @@ const PHASE1_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   2: {
-    title: "17/9 — Ngày 2: True/False/Not Given & Hiện Tại Hoàn Thành",
+    title: "20/9 — Ngày 2: True/False/Not Given & Hiện Tại Hoàn Thành",
     summary: "Ngồi bàn 10h • Thực học 7h (4 ca x 105m): Ca 1 Reading (Học chiến thuật TFNG & Bẫy Over-inference ➔ Luyện Scan), Ca 2 Listening (Học bắt bưu điện, ngày tháng & Bẫy tự sửa ➔ Cam 11 T2-S1), Ca 3 Writing (HTHT vs QKĐ ➔ 10 câu kinh nghiệm), Ca 4 Speaking (Làm chủ cụm ý Thought Chunking ➔ Shadowing tự nhiên).",
     focusSkill: "all",
     tasks: [
@@ -66,7 +66,7 @@ const PHASE1_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   3: {
-    title: "18/9 — Ngày 3: Điền Từ Khuyết & Câu Bị Động Khách Quan",
+    title: "21/9 — Ngày 3: Điền Từ Khuyết & Câu Bị Động Khách Quan",
     summary: "Ngồi bàn 10h • Thực học 7h (4 ca x 105m): Ca 1 Reading (Học Summary Completion & Soi từ loại ➔ Luyện điền từ), Ca 2 Listening (Học bắt âm nối & Điền Form ➔ Cam 11 T3-S1), Ca 3 Writing (Câu bị động 3 thì ➔ Chuyển đổi 10 câu Task 1), Ca 4 Speaking (Cơ miệng âm đuôi -s/z ➔ Công thức 1-2-3 Part 1).",
     focusSkill: "all",
     tasks: [
@@ -77,7 +77,7 @@ const PHASE1_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   4: {
-    title: "19/9 — Ngày 4: Matching Headings & Cấu Trúc So Sánh",
+    title: "22/9 — Ngày 4: Matching Headings & Cấu Trúc So Sánh",
     summary: "Ngồi bàn 10h • Thực học 7h (4 ca x 105m): Ca 1 Reading (Học bóc tách Topic Sentence & Né bẫy Headings ➔ Luyện ghép tiêu đề), Ca 2 Listening (Học Section 2 Bản đồ & Anchor Point ➔ Cam 11 T4-S1), Ca 3 Writing (So sánh hơn, nhất, kép ➔ 10 câu Task 1), Ca 4 Speaking (Cơ miệng âm đuôi -ed ➔ Kể chuyện quá khứ).",
     focusSkill: "all",
     tasks: [
@@ -88,7 +88,7 @@ const PHASE1_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   5: {
-    title: "20/9 — Ngày 5: Multiple Choice & Mệnh Đề Quan Hệ",
+    title: "23/9 — Ngày 5: Multiple Choice & Mệnh Đề Quan Hệ",
     summary: "Ngồi bàn 10h • Thực học 7h (4 ca x 105m): Ca 1 Reading (Học Multiple Choice bẫy đối lập ➔ Luyện trắc nghiệm), Ca 2 Listening (Học Section 2 Hệ từ vựng không gian ➔ Cam 12 T1-S1), Ca 3 Writing (MĐQH Who/Which/That ➔ Nối câu phức), Ca 4 Speaking (Trọng âm câu & Fillers tự nhiên).",
     focusSkill: "all",
     tasks: [
@@ -99,7 +99,7 @@ const PHASE1_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   6: {
-    title: "21/9 — Ngày 6: Matching Features & Câu Điều Kiện 1-2",
+    title: "24/9 — Ngày 6: Matching Features & Câu Điều Kiện 1-2",
     summary: "Ngồi bàn 10h • Thực học 7h (4 ca x 105m): Ca 1 Reading (Học Matching Features tên người ➔ Luyện đối soát quan điểm), Ca 2 Listening (Học Section 3 Hội thoại & Bẫy đồng thuận giả ➔ Cam 12 T2-S1), Ca 3 Writing (Câu ĐK1 & ĐK2 Task 2 ➔ 10 câu nguyên nhân - kết quả), Ca 4 Speaking (Nối âm tự nhiên ➔ Phản xạ Part 1 Hobbies).",
     focusSkill: "all",
     tasks: [
@@ -110,7 +110,7 @@ const PHASE1_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   7: {
-    title: "22/9 — Ngày 7: Matching Info & Động Từ Khuyết Thiếu (Hedging)",
+    title: "25/9 — Ngày 7: Matching Info & Động Từ Khuyết Thiếu (Hedging)",
     summary: "Ngồi bàn 10h • Thực học 7h (4 ca x 105m): Ca 1 Reading (Học Matching Information ➔ Luyện bắt chi tiết), Ca 2 Listening (Học Section 4 Bài giảng & Signposts ➔ Cam 12 T3-S1), Ca 3 Writing (Modal Verbs & Hedging ➔ 10 câu khách quan hóa), Ca 4 Speaking (Ngữ điệu cảm xúc ➔ Phản xạ 10 câu Part 1).",
     focusSkill: "all",
     tasks: [
@@ -121,7 +121,7 @@ const PHASE1_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   8: {
-    title: "23/9 — Ngày 8: Diagram Completion & Giới Từ Học Thuật",
+    title: "26/9 — Ngày 8: Diagram Completion & Giới Từ Học Thuật",
     summary: "Ngồi bàn 10h • Thực học 7h (4 ca x 105m): Ca 1 Reading (Điền sơ đồ quy trình Diagram), Ca 2 Listening (Cam 12 T4-S1 thể thao), Ca 3 Writing (Giới từ In/On/At & Viết đoạn 150 từ), Ca 4 Speaking (Chiến thuật 1p Part 2 & khung PPF).",
     focusSkill: "all",
     tasks: [
@@ -132,7 +132,7 @@ const PHASE1_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   9: {
-    title: "24/9 — Ngày 9: Full Passage 1 Thử Thách & 30 ĐT Bất Quy Tắc",
+    title: "27/9 — Ngày 9: Full Passage 1 Thử Thách & 30 ĐT Bất Quy Tắc",
     summary: "Ngồi bàn 10h • Thực học 7h (4 ca x 105m): Ca 1 Reading (Đọc trọn vẹn Passage 1 trong 18 phút), Ca 2 Listening (Bóc tách 5 dạng bẫy S1), Ca 3 Writing (30 ĐT Bất Quy Tắc & câu phức), Ca 4 Speaking (Nói 2 phút Part 2 theo khung PPF).",
     focusSkill: "all",
     tasks: [
@@ -143,7 +143,7 @@ const PHASE1_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   10: {
-    title: "25/9 — Ngày 10: Phân Tích C1 Cam 11 & Phòng Khám Lỗi Sâu",
+    title: "28/9 — Ngày 10: Phân Tích C1 Cam 11 & Phòng Khám Lỗi Sâu",
     summary: "Ngồi bàn 10h • Thực học 7h (4 ca x 105m): Ca 1 Reading (Phân tích từ vựng C1 Cam 11), Ca 2 Listening (Mini-Mock S1 ép giờ 10/10), Ca 3 Writing (Phòng khám sửa lỗi sâu trong tuần), Ca 4 Speaking (Phản xạ không vấp).",
     focusSkill: "all",
     tasks: [
@@ -154,7 +154,7 @@ const PHASE1_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   11: {
-    title: "26/9 — Ngày 11: Củng Cố Cột Mốc Tuần 2 & Thử Thách 4 Kỹ Năng",
+    title: "29/9 — Ngày 11: Củng Cố Cột Mốc Tuần 2 & Thử Thách 4 Kỹ Năng",
     summary: "Ngồi bàn 10h • Thực học 7h (4 ca x 105m): Ca 1 Reading (Đọc hiểu 2 cột), Ca 2 Listening (Cam 11 T1-S2), Ca 3 Writing (Tổng ôn 7 trụ cột), Ca 4 Speaking (Ghép trọn Part 1 & 2 trôi chảy).",
     focusSkill: "all",
     isGatekeeper: false,
@@ -166,7 +166,7 @@ const PHASE1_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   31: {
-    title: "16/10 — Ngày 31: ĐẠI KIỂM ĐỊNH TỐT NGHIỆP PHASE 1 (BAND 4.5 ➔ 5.5)",
+    title: "19/10 — Ngày 31: ĐẠI KIỂM ĐỊNH TỐT NGHIỆP PHASE 1 (BAND 4.5 ➔ 5.5)",
     summary: "Ngồi bàn 10h • Thực học 7h (4 ca x 105m): 4 bài kiểm tra 4 kỹ năng chuyển cấp chính thức sau 31 ngày lấp trọn 12 thì, xóa dịch word-by-word và nạp 800 từ nền tảng. Hoàn thành để mở khóa Phase 2!",
     focusSkill: "all",
     isGatekeeper: true,
@@ -217,7 +217,7 @@ const PHASE1_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
 const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
   // --- Tuần 1 Giai đoạn 2 (22/9 - 28/9) ---
   12: {
-    title: "29/9 (T2) — Environment: 20 Từ C1 + Đảo Ngữ Not only",
+    title: "2/10 (T6) — Environment: 20 Từ C1 + Đảo Ngữ Not only",
     summary: "Ca 1: 20 từ Environment C1 + Đảo ngữ Not only...but also. Ca 2: Cam 17 T1 S3+S4. Ca 3: Line graph + Opinion Essay (ép giờ). Ca 4: Part 3 'Environment' — phản biện Should governments take action?",
     focusSkill: "vocab",
     tasks: [
@@ -228,7 +228,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   13: {
-    title: "30/9 (T3) — Environment: 20 Từ C1/C2 + Mệnh Đề Nhượng Bộ",
+    title: "3/10 (T7) — Environment: 20 Từ C1/C2 + Mệnh Đề Nhượng Bộ",
     summary: "Ôn 20 từ ngày 1 + học 20 từ mới. Mệnh đề nhượng bộ Although/Despite/In spite of. Cam 17 T1 S4. Opinion Essay về Renewable energy. Speaking Part 3 về Environmental problems.",
     focusSkill: "vocab",
     tasks: [
@@ -239,7 +239,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   14: {
-    title: "27/9 (T7) — Environment: Collocations + Đảo Ngữ So/Such",
+    title: "30/9 (T4) — Environment: Collocations + Đảo Ngữ So/Such",
     summary: "Ôn tập từ vựng ngày 1+2. Học collocations Environment. Đảo ngữ So/Such. Review Cam 17 T1 S3+S4. Viết lại Task 1 và Task 2 đã sửa.",
     focusSkill: "grammar",
     tasks: [
@@ -250,7 +250,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   15: {
-    title: "28/9 (CN) — Environment: Đảo Ngữ Only + Cam 17 T2",
+    title: "1/10 (T5) — Environment: Đảo Ngữ Only + Cam 17 T2",
     summary: "Collocations mới: combat climate change, promote sustainable development. Đảo ngữ với Only after/when/by. Cam 17 T2 S3+S4 và P2. Pie Chart + Opinion Essay.",
     focusSkill: "grammar",
     tasks: [
@@ -261,7 +261,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   16: {
-    title: "1/10 (T4) — Tổng Kết Từ Vựng Environment + Cam 17 T2 P3",
+    title: "4/10 (CN) — Tổng Kết Từ Vựng Environment + Cam 17 T2 P3",
     summary: "Ôn tập 60+ từ C1/C2 về Environment. Viết đoạn văn 200 từ dùng 15 từ. Ôn đảo ngữ. Cam 17 T2-S4 + P3. Full test Task 1+2 ép giờ. Mock Part 3 Environment.",
     focusSkill: "all",
     tasks: [
@@ -272,7 +272,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   17: {
-    title: "2/10 (T5) — Chuyển Tiếp Education + Câu Chẻ Cleft Sentences",
+    title: "5/10 (T2) — Chuyển Tiếp Education + Câu Chẻ Cleft Sentences",
     summary: "Ôn 20 câu từ vựng Environment + giới thiệu 8 từ Education C1. Câu chẻ It is...that/who. Cam 17 T3-S3+S4 + P2. Task 1 Table + Opinion Essay. Shadowing Part 3 Education.",
     focusSkill: "grammar",
     tasks: [
@@ -283,7 +283,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   18: {
-    title: "3/10 (T6) — Education: 20 Từ C1 + Phân Từ Participles + Cam 17 T3",
+    title: "6/10 (T3) — Education: 20 Từ C1 + Phân Từ Participles + Cam 17 T3",
     summary: "Học 20 từ Education C1/C2. Phân từ rút gọn mệnh đề (V-ing chủ động / V-ed bị động). Cam 17 T3-S4 + P3. Mixed Graphs + Opinion Essay. Tự đánh giá tiến bộ 1 tuần.",
     focusSkill: "grammar",
     tasks: [
@@ -296,7 +296,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
 
   // --- Tuần 2 Giai đoạn 2 (29/9 - 5/10) ---
   19: {
-    title: "4/10 (T7) — Education Nâng Cao + Câu Chẻ Chuyên Sâu + Cam 18 T1",
+    title: "7/10 (T4) — Education Nâng Cao + Câu Chẻ Chuyên Sâu + Cam 18 T1",
     summary: "Collocations Education: acquire knowledge, foster creativity, holistic development. Câu chẻ nâng cao nhấn mạnh S/O/Adv. Cam 18 T1-S3+S4. Pie Chart + Discuss both views.",
     focusSkill: "grammar",
     tasks: [
@@ -307,7 +307,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   20: {
-    title: "5/10 (CN) — Technology in Education + Đảo Ngữ Hardly/Scarcely + Cam 18 T1 P3",
+    title: "8/10 (T5) — Technology in Education + Đảo Ngữ Hardly/Scarcely + Cam 18 T1 P3",
     summary: "20 từ Technology in Education: cutting-edge, adaptive software, gamification. Đảo ngữ Hardly/Scarcely...when + Past Perfect. Cam 18 T1-S4 + P3. Table + Discuss both views.",
     focusSkill: "vocab",
     tasks: [
@@ -318,7 +318,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   21: {
-    title: "6/10 (T2) — Tổng Hợp Tuần 2: Education + Tech + Review Cam 18 T1",
+    title: "9/10 (T6) — Tổng Hợp Tuần 2: Education + Tech + Review Cam 18 T1",
     summary: "Ôn tập toàn bộ từ vựng Education + Technology. Kết hợp Câu chẻ + Đảo ngữ. Review Cam 18 T1 (tốc độ 1.2x). Viết lại Mixed Pie+Table. Tự phản biện bài viết của mình.",
     focusSkill: "all",
     tasks: [
@@ -329,7 +329,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   22: {
-    title: "7/10 (T3) — Psychology & Learning + Phân Từ Hoàn Thành + Cam 18 T2",
+    title: "10/10 (T7) — Psychology & Learning + Phân Từ Hoàn Thành + Cam 18 T2",
     summary: "Từ vựng Psychology & Learning: cognitive overload, growth mindset, intrinsic motivation. Phân từ hoàn thành Having + V3. Cam 18 T2-S3+S4 + P2. Pie Chart khó + Discuss both views.",
     focusSkill: "vocab",
     tasks: [
@@ -340,7 +340,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   23: {
-    title: "8/10 (T4) — Learning Methods + Mục Đích & Kết Quả + Cam 18 T3",
+    title: "11/10 (CN) — Learning Methods + Mục Đích & Kết Quả + Cam 18 T3",
     summary: "Từ vựng Learning Styles: spaced repetition, active recall, growth mindset. Mệnh đề mục đích (in order that/so that) và kết quả (such that). Cam 18 T3-S3+S4. Task 1 Mixed Bar+Table.",
     focusSkill: "vocab",
     tasks: [
@@ -351,7 +351,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   24: {
-    title: "9/10 (T5) — Ôn Tập Tổng Hợp Tuần 2 + Cam 18 Full Test",
+    title: "12/10 (T2) — Ôn Tập Tổng Hợp Tuần 2 + Cam 18 Full Test",
     summary: "Ôn 50 từ Education + Tech + Psychology. Làm Full Listening Cam 18 T1. Full Writing Test Task 1 + Task 2 (60 phút). Full Mock Speaking P1-P2-P3. CMA: Tổng ôn Forecasting.",
     focusSkill: "all",
     tasks: [
@@ -362,7 +362,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   25: {
-    title: "10/10 (T6) — Tổng Kết Tuần 2 + Làm Nóng Tuần 3",
+    title: "13/10 (T3) — Tổng Kết Tuần 2 + Làm Nóng Tuần 3",
     summary: "50 câu trắc nghiệm tổng hợp 2 tuần. Viết 1 bài Discuss đủ 5 cấu trúc nâng cao. Nghe Cam 19 T2-S3 (làm nóng). Tự đánh giá KPI tuần 2.",
     focusSkill: "all",
     tasks: [
@@ -373,9 +373,9 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
 
-  // --- Tuần 3 Giai đoạn 2 (10-16/10): Technology ---
+  // --- Tuần 3 Giai đoạn 2 (13-19/10): Technology ---
   26: {
-    title: "11/10 (T7) — Technology: 20 Từ C1 + Rút Gọn Mệnh Đề V-ing/V-ed + Cam 18 T4",
+    title: "14/10 (T4) — Technology: 20 Từ C1 + Rút Gọn Mệnh Đề V-ing/V-ed + Cam 18 T4",
     summary: "20 từ Technology C1: groundbreaking, state-of-the-art, IoT, digital divide. Rút gọn mệnh đề quan hệ V-ing (chủ động) / V-ed (bị động). Cam 18 T4-S3+S4 + P2. Map + Problem/Solution.",
     focusSkill: "grammar",
     tasks: [
@@ -386,7 +386,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   27: {
-    title: "12/10 (CN) — Technology & Internet + Rút Gọn Nâng Cao + Cam 18 T4 P3",
+    title: "15/10 (T5) — Technology & Internet + Rút Gọn Nâng Cao + Cam 18 T4 P3",
     summary: "20 từ Technology & Internet: cybercrime, identity theft, facial recognition, genetic engineering. Rút gọn V-ing/V-ed hỗn hợp nâng cao. Cam 18 T4-S4 + P3. Process + Problem/Solution.",
     focusSkill: "vocab",
     tasks: [
@@ -397,7 +397,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   28: {
-    title: "13/10 (T2) — Technology Ethics + Phân Từ Hoàn Thành + Review Cam 18 T4",
+    title: "16/10 (T6) — Technology Ethics + Phân Từ Hoàn Thành + Review Cam 18 T4",
     summary: "Từ vựng Tech Ethics: ethical dilemma, data privacy, deepfake, accountability. Phân từ hoàn thành Having + V3 ôn lại. Review Cam 18 T4 (S3+S4, tốc độ bình thường). Map so sánh lịch sử + P/S.",
     focusSkill: "vocab",
     tasks: [
@@ -408,7 +408,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   29: {
-    title: "14/10 (T3) — Big Data & AI + Tổng Hợp Grammar + Cam 19 T1",
+    title: "17/10 (T7) — Big Data & AI + Tổng Hợp Grammar + Cam 19 T1",
     summary: "Ôn 60 từ Tech trong tuần. Viết đoạn 200 từ về Big Data. Tổng hợp 15 câu Rút gọn + Phân từ + Đảo ngữ + Câu chẻ. Cam 19 T1-S3+S4 + P2 (Matching Headings).",
     focusSkill: "all",
     tasks: [
@@ -419,7 +419,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   30: {
-    title: "15/10 (T4) — Full Test Cam 19 T1 + Tổng Ôn 3 Tuần",
+    title: "18/10 (CN) — Full Test Cam 19 T1 + Tổng Ôn 3 Tuần",
     summary: "Full Test Cam 19 T1 (Listening + Reading 60p). Full Writing Test (Map + P/S). Full Mock Speaking về Technology. Phân tích lỗi sai sâu.",
     focusSkill: "all",
     tasks: [
@@ -430,7 +430,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   31: {
-    title: "16/10 (T5) — Cybersecurity + Ôn Toàn Bộ Rút Gọn Mệnh Đề + Cam 19 T1 P3",
+    title: "19/10 (T2) — Cybersecurity + Ôn Toàn Bộ Rút Gọn Mệnh Đề + Cam 19 T1 P3",
     summary: "Từ vựng Cybersecurity: encryption, ransomware, digital footprint, phishing. Ôn tất cả cách rút gọn (V-ing, V-ed, to V, Having V3). Cam 19 T1-S4 + P3. Map tương lai + P/S Già hóa dân số.",
     focusSkill: "vocab",
     tasks: [
@@ -441,7 +441,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   32: {
-    title: "17/10 (T6) — Tổng Kết Tuần 3 + Super Review + Cam 19 T2 Làm Nóng",
+    title: "20/10 (T3) — Tổng Kết Tuần 3 + Super Review + Cam 19 T2 Làm Nóng",
     summary: "50 câu trắc nghiệm 3 chủ đề. Full Test Cam 19 T1 Writing. Nghe làm nóng Cam 19 T2-S3. Tự đánh giá KPI tuần 3 — Grammar rút gọn mệnh đề đạt 95%?",
     focusSkill: "all",
     tasks: [
@@ -454,7 +454,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
 
   // --- Tuần 4 Giai đoạn 2 (13-19/10): Health ---
   33: {
-    title: "16/10 (T6) — Health: 20 Từ C1 + So...That / Such...That + Cam 19 T2",
+    title: "19/10 (T2) — Health: 20 Từ C1 + So...That / Such...That + Cam 19 T2",
     summary: "20 từ Health C1: sedentary lifestyle, chronic diseases, immune system. Đảo ngữ So...That. Cam 19 T2-S3+S4 + P2. Mixed Graphs Line+Bar + Advantage/Disadvantage Essay.",
     focusSkill: "vocab",
     tasks: [
@@ -465,7 +465,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   34: {
-    title: "17/10 (T7) — Mental Health + Mệnh Đề Nguyên Nhân + Cam 19 T2 P3",
+    title: "20/10 (T3) — Mental Health + Mệnh Đề Nguyên Nhân + Cam 19 T2 P3",
     summary: "20 từ Mental Health: anxiety, burnout, resilience, mindfulness. Because vs Because of vs Due to. Cam 19 T2-S4 + P3. Table+Pie + Advantage/Disadvantage về Work from home.",
     focusSkill: "vocab",
     tasks: [
@@ -476,7 +476,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   35: {
-    title: "18/10 (CN) — Healthcare Systems + Cause-Effect Nâng Cao + Cam 19 T3",
+    title: "21/10 (T4) — Healthcare Systems + Cause-Effect Nâng Cao + Cam 19 T3",
     summary: "Từ vựng Healthcare: universal healthcare, vaccination, epidemic, fatality rate. Consequently/Therefore ở đầu câu. Review Cam 19 T2. Mixed Line+Pie + Adv/Dis về online food delivery.",
     focusSkill: "vocab",
     tasks: [
@@ -487,7 +487,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   36: {
-    title: "19/10 (T2) — Nutrition + Tổng Hợp Grammar Sức Khỏe + Cam 19 T3",
+    title: "22/10 (T5) — Nutrition + Tổng Hợp Grammar Sức Khỏe + Cam 19 T3",
     summary: "Ôn 60+ từ Health. Viết 200 từ về sống khỏe mạnh. Tổng hợp Cause-Effect + đảo ngữ So...That. Cam 19 T3-S3+S4 + P2. Mixed Graphs 3 biểu đồ + Adv/Dis về công nghệ kết nối.",
     focusSkill: "all",
     tasks: [
@@ -498,7 +498,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   37: {
-    title: "20/10 (T3) — Full Test Cam 19 T2 + Full Test Writing Health",
+    title: "23/10 (T6) — Full Test Cam 19 T2 + Full Test Writing Health",
     summary: "Tổng ôn 4 chủ đề từ vựng. Full Listening Cam 19 T2. Full Reading Cam 19 T2. Full Writing Test (Mixed Graphs + Adv/Dis). Full Mock Speaking về Health.",
     focusSkill: "all",
     tasks: [
@@ -509,7 +509,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   38: {
-    title: "21/10 (T4) — Epidemics & Pandemics + Cam 19 T3 P3",
+    title: "24/10 (T7) — Epidemics & Pandemics + Cam 19 T3 P3",
     summary: "Từ vựng Epidemics: outbreak, herd immunity, asymptomatic, contact tracing. Tổng hợp Cause-Effect + Đảo ngữ (15 câu viết lại). Cam 19 T3-S4 + P3. Mixed Graphs + Adv/Dis (sống thọ hơn).",
     focusSkill: "vocab",
     tasks: [
@@ -520,7 +520,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   39: {
-    title: "22/10 (T5) — Tổng Kết Tuần 4 + Làm Nóng Tuần 5",
+    title: "25/10 (CN) — Tổng Kết Tuần 4 + Làm Nóng Tuần 5",
     summary: "Super Review 4 chủ đề. Full Test Cam 19 T4-S3 làm nóng. Full Writing Test + đánh giá định kỳ. Thực hành tự do speaking cuối tuần. KPI tuần 4: Adv/Dis đúng cấu trúc, Cam 19 > 6.5.",
     focusSkill: "all",
     tasks: [
@@ -533,7 +533,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
 
   // --- Tuần 5 Giai đoạn 2 (20-26/10): Economy + Mixed Conditionals ---
   40: {
-    title: "23/10 (T6) — Economy: 25 Từ C1 + Câu Điều Kiện Hỗn Hợp (Mixed Cond P1) + Cam 19 T4",
+    title: "26/10 (T2) — Economy: 25 Từ C1 + Câu Điều Kiện Hỗn Hợp (Mixed Cond P1) + Cam 19 T4",
     summary: "25 từ Economy C1: GDP, fiscal policy, trade deficit, recession, subsidy. Mixed Conditionals Loại 3+2 (quá khứ → hiện tại). Cam 19 T4-S3+S4 + P2. Line graph + Opinion về kinh tế.",
     focusSkill: "grammar",
     tasks: [
@@ -544,7 +544,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   41: {
-    title: "24/10 (T7) — Personal Finance + Mixed Cond với could/might + Cam 19 T4 P3",
+    title: "27/10 (T3) — Personal Finance + Mixed Cond với could/might + Cam 19 T4 P3",
     summary: "20 từ Personal Finance: savings, mortgage, credit card, investment portfolio, bankruptcy. Mixed Cond với could/might/should thay cho would. Cam 19 T4-S4 + P3. Bar chart + Discuss.",
     focusSkill: "vocab",
     tasks: [
@@ -555,7 +555,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   42: {
-    title: "25/10 (CN) — Thương Mại + Luyện Mixed Cond + Review Cam 19 T4",
+    title: "28/10 (T4) — Thương Mại + Luyện Mixed Cond + Review Cam 19 T4",
     summary: "Ôn 50 từ Economy-Finance. Viết đoạn 180 từ về lạm phát. 20 câu bài tập Mixed Conditionals. Review Cam 19 T4 (1.2x). Pie chart + Problem/Solution về thất nghiệp giới trẻ.",
     focusSkill: "all",
     tasks: [
@@ -566,7 +566,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   43: {
-    title: "26/10 (T2) — Full Test Tổng Hợp + Reading & Writing Marathon",
+    title: "29/10 (T5) — Full Test Tổng Hợp + Reading & Writing Marathon",
     summary: "Tổng ôn từ vựng 5 chủ đề. Full Reading (Cam 18 T1 hoặc 19 T4, ép 60p). Full Writing 60p liền mạch (Mixed Graphs + Opinion). Speaking về Money & Success.",
     focusSkill: "all",
     tasks: [
@@ -577,7 +577,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   44: {
-    title: "27/10 (T3) — Full Test Cam 19 T4 Listening + Full Writing",
+    title: "30/10 (T6) — Full Test Cam 19 T4 Listening + Full Writing",
     summary: "Full Listening Cam 19 T4. Full Writing 60p (Map + Discuss). Full Mock Speaking P1-P2-P3. Xác định Band điểm hiện tại. KPI: Listening Cam 19 > 6.5.",
     focusSkill: "all",
     tasks: [
@@ -588,7 +588,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   45: {
-    title: "28/10 (T4) — Ngày Khắc Phục Điểm Yếu",
+    title: "31/10 (T7) — Ngày Khắc Phục Điểm Yếu",
     summary: "Dành riêng để vá lỗ hổng phát hiện trong 5 ngày vừa qua. Sửa lỗi grammar lặp lại. Luyện dạng Matching (Listening). Luyện dạng bài viết yếu nhất. Flashcard Speaking 20 câu.",
     focusSkill: "all",
     tasks: [
@@ -599,7 +599,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   46: {
-    title: "29/10 (T5) — MOCK TEST TOÀN DIỆN NHƯ THI THẬT",
+    title: "1/11 (CN) — MOCK TEST TOÀN DIỆN NHƯ THI THẬT",
     summary: "Thi thử hoàn toàn như thi thật: Listening + Reading + Writing + Speaking theo lịch thi chuẩn. Tính điểm rough. Viết Báo cáo sau Mock: 3 lỗi chết người cần sửa ngay.",
     focusSkill: "all",
     isGatekeeper: true,
@@ -657,7 +657,7 @@ const PHASE2_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
 
 const PHASE3_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
   47: {
-    title: "30/10 (T6) — Urbanization: 25 Từ C1 + Cụm Danh Từ Phức Hợp + Cam 16 T1",
+    title: "2/11 (T2) — Urbanization: 25 Từ C1 + Cụm Danh Từ Phức Hợp + Cam 16 T1",
     summary: "25 từ Urbanization/Government C1: urban sprawl, gentrification, congestion, civic engagement. Cụm danh từ phức hợp làm chủ ngữ. Cam 16 T1-S3+S4 + P2. Full Test Writing #1. Part 3 Urban Life.",
     focusSkill: "grammar",
     tasks: [
@@ -668,7 +668,7 @@ const PHASE3_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   48: {
-    title: "31/10 (T7) — Law & Regulations + Error Hunting Grammar + Cam 16 T1 P3",
+    title: "3/11 (T3) — Law & Regulations + Error Hunting Grammar + Cam 16 T1 P3",
     summary: "20 từ Law & Regulations: enforcement, compliance, legal framework, transparency. Error Hunting — sửa lỗi mạo từ (articles). Cam 16 T1-S4 + P3. Full Test Writing #2 Map + P/S.",
     focusSkill: "grammar",
     tasks: [
@@ -679,7 +679,7 @@ const PHASE3_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   49: {
-    title: "1/11 (CN) — Infrastructure & Full Reading Cam 16 T2",
+    title: "4/11 (T4) — Infrastructure & Full Reading Cam 16 T2",
     summary: "Tổng hợp từ vựng Government-Urban-Law. Câu bị động trong Map/Process. Full Reading Cam 16 T2 (60p). Full Test Writing #3 Process + Adv/Dis. Speaking Part 2 về thành phố.",
     focusSkill: "reading",
     tasks: [
@@ -690,7 +690,7 @@ const PHASE3_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   50: {
-    title: "2/11 (T2) — Full Test Cam 16 T1 Listening + Full Writing #4",
+    title: "5/11 (T5) — Full Test Cam 16 T1 Listening + Full Writing #4",
     summary: "Ôn bài mẫu 7.5+ (Discuss + P/S). Full Listening Cam 16 T1 (liền mạch, sức bền). Full Test Writing #4 (đề khó nhất YouPass). Full Mock Speaking P1+P2+P3.",
     focusSkill: "all",
     tasks: [
@@ -701,7 +701,7 @@ const PHASE3_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   51: {
-    title: "3/11 (T3) — Khắc Phục Kỹ Năng Yếu + Full Test #5",
+    title: "6/11 (T6) — Khắc Phục Kỹ Năng Yếu + Full Test #5",
     summary: "Khắc phục điểm yếu phát hiện trong tuần. Luyện Matching (Listening). Full Test Writing #5 (tăng tốc, Task 2 rút còn 35 phút). Part 3 xoay vòng 5 chủ đề.",
     focusSkill: "all",
     tasks: [
@@ -712,7 +712,7 @@ const PHASE3_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   52: {
-    title: "4/11 (T4) — Reading Tốc Độ + Full Test #6 + Tổng Kết Tuần 1",
+    title: "7/11 (T7) — Reading Tốc Độ + Full Test #6 + Tổng Kết Tuần 1",
     summary: "Học từ Social Issues (20 từ). Full Reading Cam 16 T3 (ép 50 phút). Full Test Writing #6 (Bar+Table + Opinion). Reading Phản Xạ: ép tốc độ. Báo cáo tiến độ tuần.",
     focusSkill: "reading",
     tasks: [
@@ -723,7 +723,7 @@ const PHASE3_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   53: {
-    title: "5/11 (T5) — Globalization: 25 Từ C1 + V-ing/to V Chủ Ngữ + Cam 16 T3",
+    title: "8/11 (CN) — Globalization: 25 Từ C1 + V-ing/to V Chủ Ngữ + Cam 16 T3",
     summary: "25 từ Globalization C1: cultural homogenization, multinational corporations, brain drain, lingua franca. V-ing và to V làm chủ ngữ câu. Cam 16 T3-S3+S4 + P2. Full Test #7 Process + Discuss.",
     focusSkill: "vocab",
     tasks: [
@@ -734,7 +734,7 @@ const PHASE3_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   54: {
-    title: "6/11 (T6) — Social Inequality + Error Hunting Danh Từ + Cam 16 T3 P3",
+    title: "9/11 (T2) — Social Inequality + Error Hunting Danh Từ + Cam 16 T3 P3",
     summary: "20 từ Social Inequality: income gap, social mobility, discrimination, marginalization. Error Hunting danh từ đếm/không đếm. Cam 16 T3-S4 + P3. Full Test #8 Line + Adv/Dis di cư.",
     focusSkill: "grammar",
     tasks: [
@@ -745,7 +745,7 @@ const PHASE3_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   55: {
-    title: "7/11 (T7) — Tổng Hợp Globalization + Full Listening Cam 16 T3 + Full Test #9",
+    title: "10/11 (T3) — Tổng Hợp Globalization + Full Listening Cam 16 T3 + Full Test #9",
     summary: "Ôn 50 từ Globalization + Social Issues. Full Listening Cam 16 T3. Full Test #9 Map + P/S thất nghiệp. Part 2 Social problem.",
     focusSkill: "all",
     tasks: [
@@ -756,7 +756,7 @@ const PHASE3_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   56: {
-    title: "8/11 (CN) — Mock Full IELTS Test (Cam 15 T1) + Phân Tích Kết Quả",
+    title: "11/11 (T4) — Mock Full IELTS Test (Cam 15 T1) + Phân Tích Kết Quả",
     summary: "Thi thử hoàn toàn như thi thật với Cam 15 Test 1. Listening + Reading + Writing + Speaking liên tục. Tính điểm rough. Lập kế hoạch khắc phục.",
     focusSkill: "all",
     tasks: [
@@ -767,7 +767,7 @@ const PHASE3_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   57: {
-    title: "9/11 (T2) — Khắc Phục Sau Mock + Full Test #10",
+    title: "12/11 (T5) — Khắc Phục Sau Mock + Full Test #10",
     summary: "Khắc phục điểm yếu từ Mock hôm qua. Luyện Multiple Choice S3 (hay sai nhất). Full Test #10 Pie+Table + Discuss. 10 câu Part 3 nối tiếp.",
     focusSkill: "all",
     tasks: [
@@ -778,7 +778,7 @@ const PHASE3_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   58: {
-    title: "10/11 (T3) — Reading Tốc Độ 50p + Full Test #11",
+    title: "13/11 (T6) — Reading Tốc Độ 50p + Full Test #11",
     summary: "Từ Sustainable Development (20 từ). Full Reading Cam 15 T2 (ép 50p). Full Test #11 Mixed Graphs + Discuss. 15 câu Quick Fire Speaking.",
     focusSkill: "reading",
     tasks: [
@@ -789,7 +789,7 @@ const PHASE3_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
     ],
   },
   59: {
-    title: "11/11 (T4) — Tổng Kết Tuần 2 + Full Test #12",
+    title: "14/11 (T7) — Tổng Kết Tuần 2 + Full Test #12",
     summary: "50 câu trắc nghiệm tổng hợp Globalization + Social Issues. Full Test #12 (đề khó nhất). Tự cho điểm, so sánh tiến bộ. KPI: 6 bài Full Test, điểm trung bình 6.0-6.5.",
     focusSkill: "all",
     tasks: [
@@ -802,7 +802,7 @@ const PHASE3_MILESTONES: Record<number, Partial<RoadmapDayNode>> = {
 
   // --- Tuần 3+ (9/11 trở đi): Crime + các chủ đề nâng cao ---
   60: {
-    title: "12/11 (T5) — Crime & Justice: 29 Từ C1 + Đảo Ngữ Had/Should/Were + Cam 15 T3",
+    title: "15/11 (CN) — Crime & Justice: 29 Từ C1 + Đảo Ngữ Had/Should/Were + Cam 15 T3",
     summary: "29 từ Crime & Justice C1: commit a crime, rehabilitation, recidivism, cybercrime, verdict. Đảo ngữ conditionals: Had/Should/Were. Cam 15 T3-S3+S4 + P2. Full Test #13 Bar + Opinion Crime.",
     focusSkill: "grammar",
     isGatekeeper: true,
@@ -1037,9 +1037,9 @@ export function generate165DaysRoadmap(): RoadmapDayNode[] {
 
   for (let day = 1; day <= 165; day++) {
     // Phase mapping based on the actual plan:
-    // Phase 1: Day 1-31 (16/9 - 16/10) — Lấp 12 thì, xóa dịch word-by-word, 800 từ nền tảng
-    // Phase 2: Day 32-77 (16/10 - 30/11) — 14 dạng bài & 2.500 từ chuyên ngành Passage 3
-    // Phase 3: Day 78-165 (1/12 - 26/2) — Luyện đề Cambridge 17-19 & Về đích 7.5
+    // Phase 1: Day 1-31 (19/9 - 19/10) — Lấp 12 thì, xóa dịch word-by-word, 800 từ nền tảng
+    // Phase 2: Day 32-77 (19/10 - 3/12) — 14 dạng bài & 2.500 từ chuyên ngành Passage 3
+    // Phase 3: Day 78-165 (4/12 - 1/3) — Luyện đề Cambridge 17-19 & Về đích 7.5
     let phase: PhaseNumber = 1;
     if (day > 77) phase = 3;
     else if (day > 31) phase = 2;

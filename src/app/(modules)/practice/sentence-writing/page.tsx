@@ -199,7 +199,7 @@ function SentenceWritingContent() {
 
         <div className="flex items-center gap-2">
           <span className="text-[11px] font-bold px-2.5 py-1 rounded-full bg-red-500/10 text-red-700 dark:text-red-400 border border-red-500/20">
-            🎯 Giai Đoạn 1: Cứu Ngữ Pháp Nền Tảng (16/9 - 16/10)
+            🎯 Giai Đoạn 1: Cứu Ngữ Pháp Nền Tảng (19/9 - 19/10)
           </span>
           <span className="text-[11px] font-mono font-bold px-2 py-1 rounded-lg bg-secondary text-foreground">
             Ngày {selectedDay}/180

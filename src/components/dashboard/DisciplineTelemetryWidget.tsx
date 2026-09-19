@@ -48,11 +48,11 @@ export function DisciplineTelemetryWidget({ discipline }: DisciplineTelemetryWid
                 Mục Tiêu Thực Học 7h/Ngày (Ngồi Bàn 10h)
               </span>
               <span className="text-[10px] font-mono px-2 py-0.2 rounded-md bg-secondary text-muted-foreground border border-border">
-                Ngày {currentDay} / 165 (Khởi động: 16/9)
+                Ngày {currentDay} / 165 (Khởi động: 19/9)
               </span>
             </div>
             <h3 className="text-lg sm:text-xl font-black text-foreground">
-              {streakDays === 0 ? "Chuỗi Học: 0 Ngày (Bắt đầu 16/9)" : `Chuỗi Học Tập: ${streakDays} Ngày Liên Tiếp`}
+              {streakDays === 0 ? "Chuỗi Học: 0 Ngày (Bắt đầu 19/9)" : `Chuỗi Học Tập: ${streakDays} Ngày Liên Tiếp`}
             </h3>
           </div>
         </div>

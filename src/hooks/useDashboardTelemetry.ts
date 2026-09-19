@@ -24,7 +24,7 @@ export function useDashboardTelemetry(): DashboardSummaryData {
       milestones: [
         {
           phase: 1,
-          title: "Giai Đoạn 1: Cứu Ngữ Pháp Nền Tảng (16/9 - 16/10)",
+          title: "Giai Đoạn 1: Cứu Ngữ Pháp Nền Tảng (19/9 - 19/10)",
           subtitle: "Ngày 1 - 31 • Lấp 12 Thì, Xóa Dịch Word-by-Word, 800 Từ Nền Tảng & 4 Ca Bằng Nhau",
           targetBandRange: "4.5 -> 5.5",
           isUnlocked: true,
@@ -43,7 +43,7 @@ export function useDashboardTelemetry(): DashboardSummaryData {
         },
         {
           phase: 2,
-          title: "Giai Đoạn 2: Chiến Thuật 4 Kỹ Năng (16/10 - 30/11)",
+          title: "Giai Đoạn 2: Chiến Thuật 4 Kỹ Năng (19/10 - 3/12)",
           subtitle: "Ngày 32 - 77 • 14 Dạng Reading, 4 Section Listening, Viết Task 1/2 & Nói",
           targetBandRange: "5.5 -> 6.5",
           isUnlocked: false,
@@ -62,7 +62,7 @@ export function useDashboardTelemetry(): DashboardSummaryData {
         },
         {
           phase: 3,
-          title: "Giai Đoạn 3: Luyện Đề & Về Đích 7.5 (1/12 - 26/2)",
+          title: "Giai Đoạn 3: Luyện Đề & Về Đích 7.5 (4/12 - 1/3)",
           subtitle: "Ngày 78 - 165 • Luyện Đề Cambridge, Chấm Bài Tự Động & Bứt Phá",
           targetBandRange: "6.5 -> 7.5+",
           isUnlocked: false,
@@ -98,7 +98,7 @@ export function useDashboardTelemetry(): DashboardSummaryData {
         averageBand: 0,
       },
       trajectoryPoints: [
-        { dayNumber: 1, dateLabel: "16/9/2026", actualBand: 4.5, projectedBand: 4.5, phaseLabel: "Giai đoạn 1" },
+        { dayNumber: 1, dateLabel: "19/9/2026", actualBand: 4.5, projectedBand: 4.5, phaseLabel: "Giai đoạn 1" },
         { dayNumber: 30, dateLabel: "Ngày 30", actualBand: null, projectedBand: 5.0, phaseLabel: "Giai đoạn 1" },
         { dayNumber: 60, dateLabel: "Ngày 60", actualBand: null, projectedBand: 5.8, phaseLabel: "Giai đoạn 1" },
         { dayNumber: 90, dateLabel: "Ngày 90", actualBand: null, projectedBand: 6.3, phaseLabel: "Giai đoạn 2" },
